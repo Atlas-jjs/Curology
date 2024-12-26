@@ -1,0 +1,45 @@
+/* Nunito Sans FONT */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Unbounded:wght@200..900&family=Young+Serif&display=swap');
+
+:root {
+    --padding-mobile-width: 20px;
+    --padding-mobile-height: 40px;
+    --padding-desktop-width: 64px;
+    --padding-desktop-height: 80px;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+}
+
+/* HEADER (Navigation Bar) */
+.nav-bar__branding {
+    width: auto;
+    height: 35px;
+}
+
+.nav-menu__nav-item {
+    list-style: none;
+}
+
+.nav-item__nav-link {
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-desktop-width) var(--padding-desktop-height);
+}
+
+.nav-bar__nav-menu--text, .nav-bar__nav-menu--icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
