@@ -9,46 +9,72 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <img src="images/Logo.webp" alt="Curology Brand" class="nav-bar__branding">
-
-            <ul class="nav-bar__nav-menu--text">
-                <li class="nav-menu__nav-item">
-                    <a href="#" class="nav-item__nav-link">SHOP</a>
-                </li>
-                <li class="nav-menu__nav-item">
-                    <a href="#" class="nav-item__nav-link">ABOUT</a>
-                </li>
-                <li class="nav-menu__nav-item">
-                    <a href="#" class="nav-item__nav-link">BLOG</a>
-                </li>
-            </ul>
-
-            <ul class="nav-bar__nav-menu--icons">
-                <!-- ICONS -->
-                <li class="nav-menu__nav-item">
-                    <a href="#" class="nav-item__nav-link">
-                        <img src="images/icons/Search.png" alt="Search Icon">
-                    </a>
-                </li>
-                <li class="nav-menu__nav-item">
-                    <a href="#" class="nav-item__nav-link">
-                        <img src="images/icons/Profile.png" alt="Account Icon">
-                    </a>
-                </li>
-                <li class="nav-menu__nav-item">
-                    <a href="#" class="nav-item__nav-link">
-                        <img src="images/icons/Bag 2.png" alt="Shopping Cart Icon">
-                    </a>
-                </li>
-            </ul>
-
-            <!-- <div class="nav__hamburger-menu">
-                <img src="images/icons/Hamburger Menu.png" alt="Hamburger Menu">
-            </div> -->
-        </nav>
-    </header>
+    <section class="hero">
+        <div class="hero__background">
+            <header>
+                <nav class="nav-bar">
+                    <!-- Hamburger Menu -->
+                    <div class="nav-bar__hamburger-menu hamburger-menu">
+                        <span class="hamburger-menu__bar"></span>
+                        <span class="hamburger-menu__bar"></span>
+                        <span class="hamburger-menu__bar"></span>
+                    </div>
+        
+                    <img src="images/Logo.webp" alt="Curology Brand" class="nav-bar__branding">
+        
+                    <!-- Navigation Text -->
+                    <div class="sidebar-container">
+                        <ul class="nav-bar__nav-menu nav-menu--text">
+                            <li class="nav-item nav-item--mobile-only">
+                                <a href="#" class="nav-item__nav-link ">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-item__nav-link">SHOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-item__nav-link">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-item__nav-link">BLOG</a>
+                            </li>
+                        </ul>
+        
+                        <div class="account-buttons">
+                            <button class="log-in-btn">Log In</button>
+                            <button class="sign-up-btn">Sign Up</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Icons -->
+                    <ul class="nav-bar__nav-menu nav-menu--icons">
+                        <a href="#" class="nav-item nav-item__search nav-item--responsive">
+                            <img src="images/icons/Search.png" alt="Search Icon">
+                        </a>
+                        <a href="#" class="nav-item nav-item__account nav-item--responsive">
+                            <img src="images/icons/Profile.png" alt="Account Icon">
+                        </a>
+                        <a href="#" class="nav-item nav-item__cart">
+                            <img src="images/icons/Bag 2.png" alt="Shopping Cart Icon">
+                        </a>
+                    </ul>
+                    
+                </nav>
+            </header>
+    
+            <div class="hero__content">
+                <h1 class="content__header">
+                    Discover Your Personalized Skincare Solution Today
+                </h1>
+                <p class="content__subheading">
+                    Our tailored products are designed to meet your individual skin needs for a radiant complexion.
+                </p>
+                <div class="content__cta-button">
+                    <button>Shop Now <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- JS -->
      <script src="main.js"></script>
 </body>
