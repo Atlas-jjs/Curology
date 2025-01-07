@@ -26,15 +26,22 @@
     box-sizing: border-box;
 }
 
-button {
-    font-family: 'Satoshi', sans-serif;
-}
-
 html {
     font-family: 'Satoshi', sans-serif;
 }
 
+button {
+    font-family: 'Satoshi', sans-serif;
+}
+
 @media (min-width: 320px) {
+    /* CUSTOM H2 */
+    .custom-h2 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 110%;
+    }
+
     /* HAMBURGER MENU */
     .hamburger-menu {
         position: sticky;
@@ -223,12 +230,6 @@ html {
         font-weight: 600;
     }
 
-    .feature__header {
-        font-size: var(--heading-mobile-h2);
-        color: var(--primary-400);
-        line-height: 120%;
-    }
-
     .feature__list-items .list-item {
         display: flex;
         flex-direction: column;
@@ -266,11 +267,6 @@ html {
         gap: 20px;
         flex-direction: column;
     }
-
-    .product__header {
-        font-size: var(--heading-mobile-h3);
-        line-height: 100%;
-    }
     
     .product__gallery {
         display: flex;
@@ -294,8 +290,49 @@ html {
 
     .product__gallery .item__content {
         transition: 0.5s ease;
-
     }
+
+    /* BENEFIT SECTION */
+    .benefit {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: var(--padding-desktop-height) var(--padding-mobile-width);
+    }
+
+    .benefit__text-section {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .benefit__statistics {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .benefit__statistics .statistics__item {
+        color: var(--primary-400);
+    }
+
+    .benefit__cta-button {
+        color: var(--accent-500);
+        padding: 12px 24px;
+        text-transform: uppercase;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid var(--accent-500);
+    }
+
+    .benefit__pictures .picture-1 {
+        display: none;
+    }
+    
+    .benefit__pictures .picture-2 {
+        width: 100%;
+        height: auto;
+    } 
 }
 
 @media (min-width: 768px) {
