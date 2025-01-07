@@ -144,10 +144,10 @@ html {
 
     /* HERO SECTION */
     .hero__background {
-        background: url(images/hero-background-mobile.png);
+        background: url(images/hero-background.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position:  right bottom;
+        background-position:  center bottom;
         /* background-position: center center; */
         overflow: hidden;
         min-height: 100vh;
@@ -155,6 +155,11 @@ html {
         position: relative;
     }
 
+    .content__product img {
+        /* background-color: red; */
+        height: auto;
+        width: 100%;
+    }
     /* .hero__content {
         display: flex;
         flex-direction: column;
@@ -245,6 +250,10 @@ html {
     .nav-item--mobile-only {
         display: none;
     }
+}
+
+@media (min-width: 1024px) {
+
 }
 
 /* NAVIGATION BAR */
