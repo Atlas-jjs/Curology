@@ -332,7 +332,71 @@ button {
     .benefit__pictures .picture-2 {
         width: 100%;
         height: auto;
-    } 
+    }
+    
+    /* CUSTOMER TESTIMONIALS */
+    .review {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        margin: var(--padding-mobile-height) var(--padding-mobile-width);
+    }
+
+    .review .review__header {
+        color: var(--primary-400);
+    }
+
+    .review .review__item {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: space-between;
+    }
+
+    .review .review__item i {
+        color: var(--primary-700);
+        font-size: 20px;
+    }
+
+    .review .review__item .item__description {
+        width: 100%;
+    }
+
+    .review .review__item .item__reviewer img {
+        border-radius: 50px;
+        object-fit: cover;
+        height: 56px;
+        width: 56px;
+    }
+
+    .review .review__item .item__reviewer {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .swiper-container{
+        position:relative;
+    }
+
+    .swiper {
+        height: 400px;
+        --swiper-pagination-color: black;
+
+        --swiper-navigation-size: 20px;
+        --swiper-navigation-color: black;
+        --swiper-pagination-bullet-vertical-gap:2rem;
+
+        /* --swiper-navigation-top-offset: 90%; */
+        /* --swiper-navigation-sides-offset: 30%; */
+        /* background-color: red; */
+
+    }
+    .swiper-slide {
+        /* box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+        border-radius: 16px;
+        padding: 16px; */
+    }
 }
 
 @media (min-width: 768px) {
@@ -431,3 +495,4 @@ button {
 /* NAVIGATION BAR */
 /* https://www.youtube.com/watch?v=U8smiWQ8Seg&t=314s */
 /* https://www.youtube.com/watch?v=flItyHiDm7E&t=70s */
+
