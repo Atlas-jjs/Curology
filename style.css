@@ -78,20 +78,26 @@ button {
 
     /* NAVIGATION BAR */
     .nav-bar {
-        top: var(--padding-mobile-height);
-        left: var(--padding-mobile-width);
-        right: var(--padding-mobile-width);
+        padding: 15px var(--padding-mobile-width);
+        width: 100%;
         display: flex;
         justify-content:space-between;
         align-items: center;
-        position: absolute;
+        position: fixed;
         z-index: 1000;
+        transition: background-color 0.2s ease;
+    }
+
+    .nav-bar.scrolled {
+        background-color:rgb(255, 255, 255);
+        border-bottom: 1px solid rgba(0,0,0,0.5);
     }
 
     /* LOGO */
     .nav-bar__branding {
         height: auto;
         width: 150px;
+        /* background-color: red; */
     }
 
     /* NAVIGATION TEXT SECTION / SIDEBAR */
@@ -432,7 +438,7 @@ button {
 
     .faq .faq__items .accordion__question i {
         color: var(--accent-500);
-        transition: transform 0.3s ease-in;
+        transition: transform 0.5s ease-in;
     }
 
     .faq .faq__items .accordion__question h4 {

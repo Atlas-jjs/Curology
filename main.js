@@ -15,6 +15,24 @@ document.addEventListener('click', e => {
         }
 });
 
+let isScrolling = false;
+
+document.addEventListener("scroll", () => {
+    if (!isScrolling) {
+        window.requestAnimationFrame(() => {
+            const navBar = document.querySelector(".nav-bar");
+            if (window.scrollY > 10) {
+                navBar.classList.add("scrolled");
+            } else {
+                navBar.classList.remove("scrolled");
+            }
+            isScrolling = false;
+        });
+        isScrolling = true;
+    }
+});
+
+
 // Swiper / Carousel
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -51,4 +69,3 @@ accordions.forEach(accordion__item => {
     accordion__item.classList.toggle("active");
   });
 });
-
