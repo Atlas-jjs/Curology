@@ -28,19 +28,24 @@
 }
 
 html {
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'GeneralSans', sans-serif;
 }
 
-button {
+p, button {
     font-family: 'Satoshi', sans-serif;
 }
 
 @media (min-width: 320px) {
-    /* CUSTOM H2 */
+    /* CUSTOM CLASSES */
     .custom-h2 {
         font-size: 36px;
         font-weight: 600;
-        line-height: 110%;
+        line-height: 100%;
+        color: var(--primary-700);
+    }
+
+    .subheading {
+        font-weight: 500;
     }
 
     /* HAMBURGER MENU */
@@ -170,10 +175,6 @@ button {
     }
 
     /* HERO SECTION */
-    .hero {
-        position: relative;
-    }
-
     .hero__background {
         background: url(images/hero-background.jpg);
         background-size: cover;
@@ -232,9 +233,14 @@ button {
         gap: 24px;
     }
 
+    .feature_headings {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
     .feature__tagline {
         color: var(--accent-500);
-        font-weight: 600;
     }
 
     .feature__list-items .list-item {
