@@ -1,3 +1,4 @@
+// Navigation Bar
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const sidebar = document.querySelector(".sidebar-container");
 
@@ -14,6 +15,7 @@ document.addEventListener('click', e => {
         }
 });
 
+// Swiper / Carousel
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -40,3 +42,13 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+
+// FAQs Accordion
+const accordions = document.querySelectorAll(".accordion__item");
+
+accordions.forEach(accordion__item => {
+  accordion__item.addEventListener("click", () => {
+    accordion__item.classList.toggle("active");
+  });
+});
+

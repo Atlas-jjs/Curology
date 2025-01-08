@@ -18,6 +18,7 @@
     --primary-400:#544A94;
     --primary-700:#3B1E54;
     --accent-500: #5E846C;
+    --accent-200: #AED0BB;
 } 
 
 * {
@@ -397,6 +398,73 @@ button {
         border-radius: 16px;
         padding: 16px; */
     }
+
+    /* FAQs  */
+    .faq {
+        margin: var(--padding-mobile-height) var(--padding-mobile-width);
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+    }
+
+    .faq .faq__headings {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .faq__cta-button {
+        color: var(--accent-500);
+        padding: 12px 24px;
+        text-transform: uppercase;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid var(--accent-500);
+    }
+
+    .faq .faq__items .accordion__question {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border-bottom: 1px solid var(--accent-200);
+        cursor: pointer;
+    }
+
+    .faq .faq__items .accordion__question i {
+        color: var(--accent-500);
+        transition: transform 0.3s ease-in;
+    }
+
+    .faq .faq__items .accordion__question h4 {
+        font-size: 18px;
+        color: var(--accent-500);
+        width: 100%;
+        padding: 6px 0;
+    }
+
+    .faq .faq__items .accordion__answer {
+        max-height: 0;
+        margin-top: 1em;
+        overflow: hidden;
+        transition: max-height 1.4s ease;
+    }
+
+    .faq .faq__items .accordion__answer p {
+        margin-bottom: 1.5em;
+    }
+
+    .accordion__question:hover {
+        background-color: #ccc;
+    }
+
+    .accordion__item.active .accordion__answer {
+        max-height: 300px;
+        animation: fade 1s ease-in-out;
+    }
+
+    .accordion__item.active i {
+        transform: rotate(90deg);
+    }
 }
 
 @media (min-width: 768px) {
@@ -489,6 +557,17 @@ button {
 
     .content__product img {
         display: none;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    } 
+    to {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
