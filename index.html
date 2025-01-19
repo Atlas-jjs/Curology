@@ -141,8 +141,8 @@
                 promise—skincare that truly works.
             </p>
         </div>
-        <div class="filler__second-column filler__description--320">
-            <p class="filler__description">
+        <div class="filler__second-column">
+            <p class="filler__description filler__description--320">
                 Every ingredient serves a purpose, every formula keeps a 
                 promise—skincare that truly works.
             </p>
@@ -165,67 +165,81 @@
                 Trusted by dermatology experts, it’s a convenient way to achieve clearer, smoother skin.
             </p>
     
-            <button class="benefit__cta-button CTA-button">
-                Customize your skincare
-            </button>
+            <div class="benefit__cta-button">
+                <button class="CTA-button">
+                    Customize your skincare
+                </button>
+            </div>
         </div>
         
     </section>
     
     <section class="product">
         <div class="product__headings">
-            <h2 class="product__header custom-h2">
-                Explore Our Skincare Essentials
+            <h2 class="product__header custom-header">
+                <!-- Explore Our Skincare Essentials -->
+                Best Sellers
             </h2>
-            <p class="product__subheading subheading">
-                Discover products crafted to care for every skin type, delivering results you can see and feel.
-            </p>
+    
+            <div class="product__view-all product__view-all--728">
+                <div class="view-all__wrapper">
+                    <a href="#">
+                        View All <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     
         <div class="product__gallery">
-            <div class="gallery__item product-item-1">
-                <img src="images/product_gallery_1.png" alt="First Product" class="item__image">
+            <div class="gallery__item">
+                <img src="images/product_gallery_1.png" alt="Custom Formula Product" class="item__image">
                 <div class="item__content">
                     <h3 class="content__header">Custom Formula</h3>
-                    <p class="content__subheading subheading">Daily Acne Clearing Treatment</p>
+                    <p class="content__subheading">Daily Acne Clearing Treatment</p>
                 </div>
             </div>
-            <div class="gallery__item product-item-2">
-                <img src="images/product_gallery_2.png" alt="First Product" class="item__image">
+            <div class="gallery__item">
+                <img src="images/product_gallery_2.png" alt="Future-Proof Product" class="item__image">
                 <div class="item__content">
                     <h3 class="content__header">Future-Proof</h3>
-                    <p class="content__subheading subheading">Custom Preventative Anti-Aging Treatment</p>
+                    <p class="content__subheading">Custom Preventative Anti-Aging Treatment</p>
                 </div>
             </div>
-            <div class="gallery__item product-item-3">
-                <img src="images/product_gallery_3.png" alt="First Product" class="item__image">
+            <div class="gallery__item">
+                <img src="images/product_gallery_3.png" alt="Hair Formula Product" class="item__image">
                 <div class="item__content">
                     <h3 class="content__header">Hair Formula</h3>
-                    <p class="content__subheading subheading">Personalized Growth Treatment</p>
+                    <p class="content__subheading">Personalized Growth Treatment</p>
                 </div>
+            </div>
+            <div class="gallery__item">
+                <img src="images/product_gallery_4.png" alt="The Lip Balm Product" class="item__image">
+                <div class="item__content">
+                    <h3 class="content__header">The Lip Balm</h3>
+                    <p class="content__subheading">Nourishing vegan formula</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="product__view-all product__view-all--320">
+            <div class="view-all__wrapper">
+                <a href="#">
+                    View All <i class="bi bi-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <section class="review">
-        <h2 class="review__header custom-h2">
-            Customer Testimonials
+        <h2 class="review__header">
+            Why Customers Love Curology
         </h2>
 
-        <div class="review__swiper">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
+        <div class="review__carousel">
+            <div class="carousel__swiper swiper">
+                <div class="swiper__container swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="review__item">
-                            <div class="item__rating">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
                             <p class="item__description">
                                 “Curology has been a total game-changer for my skin! My breakouts are gone, 
                                 my skin feels smoother, and I love how simple the routine is—just one 
@@ -233,24 +247,21 @@
                             </p>
                             
                             <div class="item__reviewer">
-                                <div class="reviewer__profile">
-                                    <img src="images/profile/customer_testimonial_1.jpg" alt="A person smiling">
-                                </div>
                                 <h5 class="reviewer__name">
                                     Emily Johnson
                                 </h5>
+                                <div class="reviewer__rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="review__item">
-                            <div class="item__rating">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
                             <p class="item__description">
                                 "I’ve been using Curology for six months, and it’s been amazing. 
                                 My skin is clearer, smoother, and the redness is gone—all thanks to their simple, 
@@ -258,78 +269,91 @@
                             </p>
                             
                             <div class="item__reviewer">
-                                <div class="reviewer__profile">
-                                    <img src="images/profile/customer_testimonial_2.jpg" alt="A person smiling">
-                                </div>
                                 <h5 class="reviewer__name">
                                     Sarah Willis
                                 </h5>
+                                <div class="reviewer__rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="review__item">
-                            <div class="item__rating">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
                             <p class="item__description">
                                 “Curology makes skincare so easy! The custom formulas cleared my acne and brightened my skin fast. 
                                 It’s simple, effective, and feels like having a personal skin expert.”
                             </p>
                             
                             <div class="item__reviewer">
-                                <div class="reviewer__profile">
-                                    <img src="images/profile/customer_testimonial_3.jpg" alt="A person smiling">
-                                </div>
                                 <h5 class="reviewer__name">
                                     David Jones
                                 </h5>
+                                <div class="reviewer__rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="review__item">
-                            <div class="item__rating">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
                             <p class="item__description">
                                 “Curology is amazing! The custom formula transformed my skin, clearing breakouts and boosting confidence. 
                                 So easy and totally worth it!”
                             </p>
                             
                             <div class="item__reviewer">
-                                <div class="reviewer__profile">
-                                    <img src="images/profile/customer_testimonial_4.jpg" alt="A person smiling">
-                                </div>
                                 <h5 class="reviewer__name">
-                                    Neil Andre
+                                    Lance Smith
                                 </h5>
+                                <div class="reviewer__rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
     
-                <div class="swiper-pagination"></div>
-
-
-                <!-- 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
-            
-            </div>            
+                <div class="swiper-pagination swiper--320"></div>            
+                
+                <div class="swiper--720">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+    
+            </div>
         </div>
     </section>
 
-    <section class="faq">
+    <div class="cta">
+        <div class="cta__headings">
+            <h2 class="cta__header custom-header">
+                Skin Goals? Let's Make It Happen
+            </h2>
+            <p class="cta__subheading">
+                Say goodbye to trial and error and hello to a personalized skincare plan designed for real, noticeable results.
+            </p>
+        </div>
+        <div class="cta__cta-button">
+            <button class="CTA-button">
+                Find my formula
+            </button>
+        </div>
+    </div>
+
+    <!-- <section class="faq">
         <div class="faq__headings">
             <h2 class="faq__header custom-h2">
                 FAQs
@@ -342,10 +366,10 @@
             </button>
         </div>
         
-        <div class="faq__items">
+         <div class="faq__items">
             <div class="items__accordion">
 
-                <!-- First Question -->
+                First Question
                 <div class="accordion__item">
                     <div class="accordion__question">
                         <h4>What is Curology?</h4>
@@ -360,7 +384,7 @@
                     </div>
                 </div>
 
-                <!-- Second Question -->
+                Second Question
                 <div class="accordion__item">
                     <div class="accordion__question">
                         <h4>How does it work?</h4>
@@ -376,7 +400,7 @@
                 </div>
                 
 
-                <!-- Third Question -->
+                Third Question
                 <div class="accordion__item">
                     <div class="accordion__question">
                         <h4>Are the products safe?</h4>
@@ -391,7 +415,7 @@
                     </div>
                 </div>
 
-                <!-- Fourth Question -->
+                Fourth Question
                 <div class="accordion__item">
                     <div class="accordion__question">
                         <h4>How do I order?</h4>
@@ -406,7 +430,7 @@
                     </div>
                 </div>
 
-                <!-- Fifth Question -->
+                Fifth Question
                 <div class="accordion__item">
                     <div class="accordion__question">
                         <h4>What if I have issues?</h4>
@@ -421,7 +445,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     
     <!-- SWIPER -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

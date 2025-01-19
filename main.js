@@ -55,7 +55,7 @@ const swiper = new Swiper('.swiper', {
     0: {
       slidesPerView: 1
     },
-    768: {
+    1024: {
       slidesPerView: 2
     }
   }
@@ -69,3 +69,5 @@ accordions.forEach(accordion__item => {
     accordion__item.classList.toggle("active");
   });
 });
+
+
