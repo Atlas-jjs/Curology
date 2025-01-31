@@ -73,17 +73,20 @@
     <section class="hero">
         <div class="hero__background">
             <div class="hero__content">
-                <h1 class="content__header">
-                    TAILORED SKINCARE FOR UNIQUE NEEDS
-                </h1>
-                <p class="content__subheading subheading">
-                    Designed to meet your individual skin needs for a radiant complexion.
-                </p>
-                <div class="content__cta-button">
-                    <button>Start Your Journey <i class="bi bi-arrow-right"></i></button>
+                <div class="content__text-section">
+                    <h1 class="content__header">
+                        TAILORED SKINCARE FOR UNIQUE NEEDS
+                    </h1>
+                    <p class="content__subheading subheading">
+                        Designed to meet your individual skin needs for a radiant complexion.
+                    </p>
+                    <div class="content__cta-button">
+                        <button>Start Your Journey <i class="bi bi-arrow-right"></i></button>
+                    </div>
                 </div>
                 <div class="content__product">
-                    <img src="images/hero-product.png" alt="Products">
+                    <img src="images/hero-mobile-product.png" alt="Products" class="product--mobile">
+                    <img src="images/hero-desktop-product.png" alt="Products" class="product--desktop">
                 </div>
             </div>
         </div>
@@ -192,13 +195,62 @@
     
         <div class="product__gallery">
             <div class="gallery__item">
-                <img src="images/product_gallery_1.png" alt="Custom Formula Product" class="item__image">
-                <div class="item__content">
-                    <h3 class="content__header">Custom Formula</h3>
-                    <p class="content__subheading">Daily Acne Clearing Treatment</p>
-                </div>
+                <a href="#"class="item__wrapper">
+                    <div class="item__pictures">
+                        <img src="images/products/product_gallery_1_hovered.png" alt="Showcasing Product" class="item__image item__image--bottom">
+                        <img src="images/products/product_gallery_1.png" alt="Custom Formula Product" class="item__image item__image--top">
+                    </div>
+                                       
+                    <div class="item__content">
+                        <a href="#" class="content__link">Custom Formula</a>
+                        <p class="content__subheading">Daily Acne Clearing Treatment</p>
+                    </div>
+                </a>
             </div>
+
             <div class="gallery__item">
+                <a href="#"class="item__wrapper">
+                    <div class="item__pictures">
+                        <img src="images/products/product_gallery_2_hovered.png" alt="Showcasing Product" class="item__image item__image--bottom">
+                        <img src="images/products/product_gallery_2.png" alt="Hair Formula Product" class="item__image item__image--top">
+                    </div>
+                                       
+                    <div class="item__content">
+                        <a href="#" class="content__link">Hair Formula</a>
+                        <p class="content__subheading">Personalized Growth Treatment</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery__item">
+                <a href="#"class="item__wrapper">
+                    <div class="item__pictures">
+                        <img src="images/products/product_gallery_3_hovered.png" alt="Showcasing Product" class="item__image item__image--bottom">
+                        <img src="images/products/product_gallery_3.png" alt="Future-Proof Product" class="item__image item__image--top">
+                    </div>
+                                       
+                    <div class="item__content">
+                        <a href="#" class="content__link">Future-Proof</a>
+                        <p class="content__subheading">Custom Preventative Anti-Aging Treatment</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery__item">
+                <a href="#"class="item__wrapper">
+                    <div class="item__pictures">
+                        <img src="images/products/product_gallery_4_hovered.png" alt="Showcasing Product" class="item__image item__image--bottom">
+                        <img src="images/products/product_gallery_4.png" alt="Dark Spot Serum" class="item__image item__image--top">
+                    </div>
+                                       
+                    <div class="item__content">
+                        <a href="#" class="content__link">Dark Spot Serum</a>
+                        <p class="content__subheading">Discoloration Fading Complex with niacinamide</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- <div class="gallery__item">
                 <img src="images/product_gallery_2.png" alt="Future-Proof Product" class="item__image">
                 <div class="item__content">
                     <h3 class="content__header">Future-Proof</h3>
@@ -218,7 +270,7 @@
                     <h3 class="content__header">The Lip Balm</h3>
                     <p class="content__subheading">Nourishing vegan formula</p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="product__view-all product__view-all--320">
@@ -240,88 +292,85 @@
                 <div class="swiper__container swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="review__item">
+                            <div class="reviewer__rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
                             <p class="item__description">
                                 “Curology has been a total game-changer for my skin! My breakouts are gone, 
                                 my skin feels smoother, and I love how simple the routine is—just one 
                                 personalized formula that actually works.”
                             </p>
                             
-                            <div class="item__reviewer">
-                                <h5 class="reviewer__name">
-                                    Emily Johnson
-                                </h5>
-                                <div class="reviewer__rating">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                            </div>
+                            <h5 class="reviewer__name">
+                                Emily Johnson
+                            </h5>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="review__item">
+                            <div class="reviewer__rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
                             <p class="item__description">
                                 "I’ve been using Curology for six months, and it’s been amazing. 
                                 My skin is clearer, smoother, and the redness is gone—all thanks to their simple, 
                                 custom formula. It’s easy to use, and I finally feel confident in my skin."
                             </p>
                             
-                            <div class="item__reviewer">
-                                <h5 class="reviewer__name">
-                                    Sarah Willis
-                                </h5>
-                                <div class="reviewer__rating">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                            </div>
+                            <h5 class="reviewer__name">
+                                Sarah Willis
+                            </h5>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="review__item">
+                            <div class="reviewer__rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
                             <p class="item__description">
                                 “Curology makes skincare so easy! The custom formulas cleared my acne and brightened my skin fast. 
                                 It’s simple, effective, and feels like having a personal skin expert.”
                             </p>
                             
-                            <div class="item__reviewer">
-                                <h5 class="reviewer__name">
-                                    David Jones
-                                </h5>
-                                <div class="reviewer__rating">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                            </div>
+                            <h5 class="reviewer__name">
+                                David Jones
+                            </h5>
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="review__item">
+                            <div class="reviewer__rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
                             <p class="item__description">
                                 “Curology is amazing! The custom formula transformed my skin, clearing breakouts and boosting confidence. 
                                 So easy and totally worth it!”
                             </p>
                             
-                            <div class="item__reviewer">
-                                <h5 class="reviewer__name">
-                                    Lance Smith
-                                </h5>
-                                <div class="reviewer__rating">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                            </div>
+                            <h5 class="reviewer__name">
+                                Lance Smith
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -329,27 +378,38 @@
                 <div class="swiper-pagination swiper--320"></div>            
                 
                 <div class="swiper--720">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev">
+                        <i class="bi bi-chevron-left"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
                 </div>
-    
+                
             </div>
+            
         </div>
     </section>
 
     <div class="cta">
-        <div class="cta__headings">
-            <h2 class="cta__header custom-header">
-                Skin Goals? Let's Make It Happen
-            </h2>
-            <p class="cta__subheading">
-                Say goodbye to trial and error and hello to a personalized skincare plan designed for real, noticeable results.
-            </p>
+        <div class="cta__text-section">
+            <div class="cta__headings">
+                <h2 class="cta__header custom-header">
+                    Skin Goals? Let's Make It Happen
+                </h2>
+                <p class="cta__subheading">
+                    Say goodbye to trial and error and hello to a personalized skincare plan designed for real, noticeable results.
+                </p>
+            </div>
+            <div class="cta__cta-button">
+                <button class="CTA-button">
+                    Find my formula
+                </button>
+            </div>
         </div>
-        <div class="cta__cta-button">
-            <button class="CTA-button">
-                Find my formula
-            </button>
+        
+        <div class="cta__image">
+            <img src="images/hero-mobile-product.png" alt="">
         </div>
     </div>
 

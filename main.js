@@ -37,7 +37,7 @@ document.addEventListener("scroll", () => {
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  // loop: true,
   spaceBetween: 32,
 
   // If we need pagination
@@ -55,8 +55,11 @@ const swiper = new Swiper('.swiper', {
     0: {
       slidesPerView: 1
     },
-    1024: {
+    768: {
       slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
     }
   }
 });
