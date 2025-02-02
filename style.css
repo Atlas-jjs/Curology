@@ -346,7 +346,7 @@ body, button {
         background-color: #FBF7FE;
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        /* gap: 24px; */
     }
 
     .filler__description {
@@ -368,6 +368,7 @@ body, button {
     }
 
     .filler__first-column p {
+        max-width: 500px;
         margin: var(--padding-320-height) var(--padding-320-width);
     }
 
@@ -693,8 +694,9 @@ body, button {
     /* * FILLER */
     .filler {
         flex-direction: row;
-        padding: 0 var(--padding-768-width);
-        gap: 3rem;
+        padding: 0 80px;
+        column-gap: 3rem;
+        justify-content: space-between;
     }
 
     .filler__description {
@@ -703,17 +705,24 @@ body, button {
 
     .filler__first-column {
         align-items: start;
+        max-width: 500px;
     }
 
     .filler__second-column {
+        margin: var(--padding-768-height) 0;
         display: flex;
         align-items: center;
-        justify-content: center;
-        max-width: 800px;
+        justify-content: end;
+        max-width: 300px;
     }
 
     .filler__first-column img {
-        width: 100%;
+        /* width: 70%; */
+        max-width: none;
+    }
+
+    .filler__first-column p {
+        /* width: 75%; */
         max-width: none;
     }
 
@@ -908,22 +917,31 @@ body, button {
 
     /* * FILLER */
     .filler {
-        padding: 0 250px;
-        justify-content: center;
-        flex-direction: row;
+        padding: 0 112px;
         gap: 5rem;
     }
 
     .filler__first-column {
-        max-width: 800px;
+        max-width: none;
     }
 
     .filler__description {
-        font-size: 32px;
+        font-size: 28px;
     }
 
-    .filler__first-column {
-        /* padding-bottom: var(--padding-1024-height); */
+    .filler__first-column img {
+        min-width: 400px;
+        max-width: 800px;
+    }
+
+    .filler__second-column {
+        margin: var(--padding-1024-height) 0;
+        max-width: none;
+    }
+
+    .filler__second-column img {
+        min-width: 300px;
+        max-width: 600px;
     }
     
     /* * BENEFIT SECTION */
@@ -1030,6 +1048,17 @@ body, button {
     .feature__headings {
         gap: 16px;
     }
+
+    /* * FILLER */
+    .filler {
+        padding: 0 128px;
+        gap: 7rem;
+    }
+
+    .filler__first-column img {
+        max-width: 1000px;
+    }
+
 
     /* * BENEFIT SECTION */
     .benefit {
