@@ -73,4 +73,5 @@ accordions.forEach(accordion__item => {
   });
 });
 
-
+// ScrollReveal
+ScrollReveal().reveal('section', {reset: true});
