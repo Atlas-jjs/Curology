@@ -36,7 +36,7 @@ document.addEventListener("scroll", () => {
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  // loop: true,
+  loop: true,
   spaceBetween: 32,
 
   // If we need pagination
