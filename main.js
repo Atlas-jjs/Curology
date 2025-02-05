@@ -32,7 +32,6 @@ document.addEventListener("scroll", () => {
     }
 });
 
-
 // Swiper / Carousel
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -74,4 +73,4 @@ accordions.forEach(accordion__item => {
 });
 
 // ScrollReveal
-ScrollReveal().reveal('section', {reset: true});
+ScrollReveal().reveal('section');
